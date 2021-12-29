@@ -1,0 +1,26 @@
+stages:
+  - build
+  - test
+
+variables:
+  TEST_PROJECT: $UnitTest
+
+build:
+  only:
+    - merge_requests
+    - main
+  stage: build
+  script:
+    - dotnet restore
+    - dotnet build -c Release
+test:
+  only:
+    - merge_requests
+    - main
+  stage: test
+  script:
+    - dotnet test $TEST_PROJECT -c Release /p:CollectCoverage=true
+  coverage: /\|\s*Total\s*\|\s*(\d+[,.]\d+%)/  
+  dependencies:
+    - build
+    

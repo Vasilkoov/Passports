@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassportsService", "Passports\PassportsService.csproj", "{C9BDF015-D64C-476E-B61F-3CEE663602B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{31A6E70E-9739-4C45-8CD2-FEFE7136A011}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9BDF015-D64C-476E-B61F-3CEE663602B7} = {C9BDF015-D64C-476E-B61F-3CEE663602B7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9BDF015-D64C-476E-B61F-3CEE663602B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BDF015-D64C-476E-B61F-3CEE663602B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BDF015-D64C-476E-B61F-3CEE663602B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BDF015-D64C-476E-B61F-3CEE663602B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A6E70E-9739-4C45-8CD2-FEFE7136A011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A6E70E-9739-4C45-8CD2-FEFE7136A011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A6E70E-9739-4C45-8CD2-FEFE7136A011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A6E70E-9739-4C45-8CD2-FEFE7136A011}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AA3DC39-B910-46C7-9708-5B6A48CF58E6}
+	EndGlobalSection
+EndGlobal
